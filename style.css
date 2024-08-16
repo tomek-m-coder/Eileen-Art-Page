@@ -364,9 +364,11 @@ footer {
     .i-c-2 {
         flex-direction: column;
     }
-    .hero-image img {
-        order: 2; /* Move image below text */
-        margin-top: 20px;
+    .hero-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        order: 1; /* Move image below text */
     }
 }
 
@@ -382,7 +384,7 @@ footer {
     }
     .btn {
         font-size: 0.875rem;
-        padding: 10px 20px;
+        padding: 8px 16px;
     }
     .main-image {
         width: 100px;
