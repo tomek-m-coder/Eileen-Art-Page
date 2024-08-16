@@ -273,16 +273,7 @@ main {
 }
 
 .input-control {
-    margin-bottom: 20px;
-}
-
-.i-c-2 {
-    display: flex;
-    flex-direction: column;
-}
-
-.i-c-2 input {
-    width: 100%;
+    margin-bottom: 20px; /* Ensure consistent margin */
 }
 
 .input-control input,
@@ -372,6 +363,10 @@ footer {
     }
     .i-c-2 {
         flex-direction: column;
+    }
+    .hero-image img {
+        order: 2; /* Move image below text */
+        margin-top: 20px;
     }
 }
 
