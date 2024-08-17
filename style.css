@@ -406,4 +406,7 @@ footer {
         font-size:40px;
         letter-spacing: -.009em;
     }
+    #contact{
+margin-bottom:0;
+    }
 }
