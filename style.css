@@ -312,8 +312,7 @@ footer {
     padding-bottom: 20px;
 }
 
-/* Add these styles at the end of your existing CSS file */
-
+/* Keep the existing gallery code */
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
@@ -335,8 +334,9 @@ footer {
     #gallery .container {
         flex-direction: column;
         height: 100vh;
-        width: 100%;
+        width: 80%;
         margin: 0;
+        margin-bottom:10px;
     }
 
     #gallery .image-div {
@@ -360,5 +360,32 @@ footer {
 
     #gallery .container:nth-child(even) .text-div {
         order: 2;
+    }
+
+    /* New styles for h1 and footer */
+    .hero h1 {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+
+    footer p {
+        margin: 10px 0;
+    }
+    header {
+        text-align: center;
+        padding: 20px;
+    }
+
+    header p {
+        margin: 10px 0;
+    }
+    .hero-content{
+        margin-left:20px;
     }
 }
