@@ -314,117 +314,46 @@ footer {
 
 /* Add these styles at the end of your existing CSS file */
 
-@media (max-width: 1200px) {
-    main {
-        padding: 0 20px;
-    }
-}
-
-@media (max-width: 934px) {
+@media (max-width: 768px) {
     .hero {
         flex-direction: column;
-        padding: 80px 0 40px;
+        padding-top: 80px;
     }
 
     .hero-content {
-        padding-right: 0;
-        text-align: center;
-    }
-
-    .hero h1 {
-        font-size: 36px;
-    }
-
-    .hero h2 {
-        font-size: 24px;
-    }
-
-    .artist-statement {
-        font-size: 20px;
-    }
-
-    .hero-description {
-        font-size: 16px;
-    }
-
-    .hero-cta {
-        justify-content: center;
+        order: 1;
     }
 
     .hero-image {
-        margin-top: 40px;
-    }
-
-    .container {
-        flex-direction: column;
-        height: auto;
-        width: 90%;
-    }
-
-    .image-div, .text-div {
-        width: 100%;
-    }
-
-    .image-div {
-        height: 300px;
-    }
-
-    .text-div {
-        padding: 30px 20px;
-    }
-}
-
-@media (max-width: 600px) {
-    nav ul {
-        display: none;
-    }
-
-    .hero h1 {
-        font-size: 28px;
-    }
-
-    .hero h2 {
-        font-size: 20px;
-    }
-
-    .artist-statement {
-        font-size: 18px;
-    }
-
-    .hero-cta {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .btn {
-        width: 100%;
-        margin-bottom: 10px;
+        order: 2;
     }
 
     .main-image {
-        width: 200px;
-        height: 200px;
+        margin-top: 30px;
     }
 
-    .image-collage {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .collage-item {
-        width: 60px;
-        height: 60px;
-    }
-
-    #contact-form {
-        padding: 0 20px;
-    }
-
-    .i-c-2 {
+    #gallery .container {
         flex-direction: column;
+        height: 100vh;
+        width: 90%;
+        margin: 0 auto 20px;
     }
 
-    .i-c-2 input {
-        width: 100%;
+    #gallery .image-div {
+        height: 50%;
+    }
+
+    #gallery .text-div {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #gallery .btn {
+        width: auto;
+        padding: 10px 20px;
     }
 }
