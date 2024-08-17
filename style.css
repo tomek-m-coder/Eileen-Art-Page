@@ -317,7 +317,6 @@ footer {
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
-        padding-top: 80px;
     }
 
     .hero-content {
@@ -326,25 +325,28 @@ footer {
 
     .hero-image {
         order: 2;
+        margin-top: 30px;
     }
 
-    .main-image {
-        margin-top: 30px;
+    #gallery {
+        padding: 0;
     }
 
     #gallery .container {
         flex-direction: column;
         height: 100vh;
-        width: 90%;
-        margin: 0 auto 20px;
+        width: 100%;
+        margin: 0;
     }
 
     #gallery .image-div {
-        height: 50%;
+        height: 60%;
+        order: 1;
     }
 
     #gallery .text-div {
-        height: 50%;
+        height: 40%;
+        order: 2;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -352,8 +354,11 @@ footer {
         padding: 20px;
     }
 
-    #gallery .btn {
-        width: auto;
-        padding: 10px 20px;
+    #gallery .container:nth-child(even) .image-div {
+        order: 1;
+    }
+
+    #gallery .container:nth-child(even) .text-div {
+        order: 2;
     }
 }
