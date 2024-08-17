@@ -202,6 +202,7 @@ main {
  .h1text{
     font-family: 'Roboto', 'Segoe UI', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
     font-family: inherit;
+    font-size:40px;
  }
 /* .image-div,
 .text-div {
@@ -402,6 +403,7 @@ footer {
         padding:10px;
     }
     .h1text{
-        font-size:32px;
+        font-size:40px;
+        letter-spacing: -.009em;
     }
 }
