@@ -312,25 +312,93 @@ footer {
     padding-bottom: 20px;
 }
 
-/* Existing CSS remains the same */
+/* Add these styles at the end of your existing CSS file */
 
-/* Add these new styles at the end of your CSS file */
+@media (max-width: 1200px) {
+    main {
+        padding: 0 20px;
+    }
+}
 
-@media (max-width: 768px) {
+@media (max-width: 934px) {
     .hero {
-        flex-direction: column-reverse;
-        padding-top: 80px;
+        flex-direction: column;
+        padding: 80px 0 40px;
     }
 
     .hero-content {
-        order: 2;
         padding-right: 0;
         text-align: center;
     }
 
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .artist-statement {
+        font-size: 20px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-cta {
+        justify-content: center;
+    }
+
     .hero-image {
-        order: 1;
-        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+    }
+
+    .image-div, .text-div {
+        width: 100%;
+    }
+
+    .image-div {
+        height: 300px;
+    }
+
+    .text-div {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .artist-statement {
+        font-size: 18px;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
     }
 
     .main-image {
@@ -339,68 +407,24 @@ footer {
     }
 
     .image-collage {
+        flex-wrap: wrap;
         justify-content: center;
     }
 
-    #contact form {
+    .collage-item {
+        width: 60px;
+        height: 60px;
+    }
+
+    #contact-form {
         padding: 0 20px;
     }
 
-    .input-control {
-        margin-bottom: 15px;
-    }
-
-    .input-control input,
-    .input-control textarea {
-        margin-bottom: 10px;
-    }
-
-    .container {
+    .i-c-2 {
         flex-direction: column;
-        height: 100vh;
+    }
+
+    .i-c-2 input {
         width: 100%;
-    }
-
-    .image-div, .text-div {
-        height: 50%;
-        width: 100%;
-    }
-
-    .text-div {
-        padding: 20px;
-    }
-}
-
-/* Adjustments for larger screens */
-@media (min-width: 769px) {
-    .container {
-        height: 60vh;
-        width: 80%;
-        margin: 40px auto;
-    }
-}
-
-/* General responsiveness improvements */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.btn {
-    white-space: nowrap;
-}
-
-/* Improved spacing for form elements */
-.input-control + .input-control {
-    margin-top: 15px;
-}
-
-/* Ensure the gallery takes full viewport height on mobile */
-@media (max-width: 768px) {
-    #gallery {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
 }
