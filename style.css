@@ -382,6 +382,7 @@ footer {
     footer {
         text-align: center;
         padding: 20px;
+        padding-bottom:0px;
     }
 
     footer p {
