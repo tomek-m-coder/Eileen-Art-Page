@@ -316,8 +316,9 @@ footer {
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
+        
     }
-
+    
     .hero-content {
         order: 1;
     }
@@ -383,13 +384,21 @@ footer {
     }
     header {
         text-align: center;
+    margin-bottom: 10px;
         padding: 20px;
     }
+
 
     header p {
         margin: 10px 0;
     }
     .hero-content{
         margin-left:20px;
+    }
+    .input-control{
+        padding:10px;
+    }
+    .h1text{
+        font-size:32px;
     }
 }
