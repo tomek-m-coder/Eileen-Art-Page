@@ -133,7 +133,7 @@ main {
 }
 .image-collage {
     display: flex;
-    gap: 10px;
+    gap: 5px;
 }
 .collage-item {
     width: 80px;
@@ -288,7 +288,7 @@ footer {
     color: #86868b;
     text-align: center;
     padding: 20px 0;
-    margin-top: 80px;
+    margin-top: 0px;
     font-size: 12px;
     line-height: 1.33337;
     font-weight: 400;
@@ -316,7 +316,7 @@ footer {
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
-        
+        margin-top:10px;
     }
     
     .hero-content {
@@ -325,10 +325,11 @@ footer {
 
     .main-image {
         order: 2;
-        margin-top: 30px;
+        margin-top: 60px;
     }
     .image-collage{
         order:4;
+        justify-content: space-between;
     }
 
     #gallery {
@@ -366,11 +367,13 @@ footer {
         order: 2;
     }
 
-    /* New styles for h1 and footer */
+    
     .hero h1 {
         font-size: 32px;
         line-height: 1.2;
         margin-bottom: 20px;
+       padding-top:20px;
+       
         
     }
 
